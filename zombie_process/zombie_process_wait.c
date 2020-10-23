@@ -36,7 +36,7 @@ int main()
                 }
                 while (1)
                 {
-                        sleep(1); // we should see child process becomes zombie
+                        sleep(1); // we should not see child process becomes zombie since wait() has reap it
                 }
                 printf("Exit from parent\n");
         }
